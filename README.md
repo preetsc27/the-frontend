@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Please Note:
+1. There is no Admin Login Security I have already shown in student.
+2. Some Time Validations are nre not there but I have Given time validation in student-home page while getting the experts.
 
 ## Available Scripts
 
