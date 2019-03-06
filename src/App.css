@@ -31,3 +31,13 @@
     transform: rotate(360deg);
   }
 }
+
+.register-form {
+  max-width: 50%;
+}
+
+.nav-btn{
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+}

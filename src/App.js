@@ -1,26 +1,27 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Switch, Route } from 'react-router-dom'
+import RegisterExpert from './components/pages/RegisterExpert';
+import StudentHome from './components/pages/StudentHome';
+import AdminBooking from './components/pages/AdminBooking';
+import StudentBookings from './components/pages/StudentBookings';
+import Login from './components/pages/Login'
+import Logout from './components/pages/Logout';
+import AdminLogin from './components/pages/AdminLogin';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Switch>
+        <Route exact path='/' component={Login}/>
+        <Route exact path='/register-expert' component={RegisterExpert}/>
+        <Route exact path='/student-home' component={StudentHome}/>
+        <Route exact path='/admin-login' component={AdminLogin}/>
+        <Route exact path='/admin-home' component={RegisterExpert}/>
+        <Route exact path='/admin-booking' component={AdminBooking}/>
+        <Route exact path='/student-booking' component={StudentBookings}/>
+        <Route exact path='/logout' component={Logout}/>
+      </Switch>
     );
   }
 }
